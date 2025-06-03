@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Please verify you are a human</title>
+    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <style>
+        body {
+            margin: 0;
+            background-color: #001b73;
+            color: white;
+            font-family: "Segoe UI", sans-serif;
+            text-align: center;
+        }
+
+        .top-meta {
+            padding: 10px 0;
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        .logo {
+            margin-top: 200px;
+            margin-bottom: 4em;
+        }
+
+        .message {
+            font-size: 24px;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        .captcha-wrapper {
+            display: inline-block;
+            margin-top: 4em;
+        }
+
+        footer {
+            bottom: 20px;
+            font-size: 13px;
+            color: #ccc;
+            margin-top: 12em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo">
+        <img src="https://acs-staging.entersoft.academy/public/uploads/main/files/26-05-2025/header.png" alt="ACS Logo" width="70">
+    </div>
+
+    <h1 style="font-weight: 20;">Please verify you are a human</h1>
+
+    <form id="turnstile-form" method="POST" action="https://acs-staging.entersoft.academy/verify-human">
+        <input type="hidden" name="_token" value="yYX4CQTRjnRJdfR97EIUvvTwx05Xl7YTwtOEWMqT" autocomplete="off">        <div class="captcha-wrapper">
+            <div class="cf-turnstile"
+                 data-sitekey="0x4AAAAAABfPItUTuABgqu4I"
+                 data-callback="onTurnstileSuccess">
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        &copy; 2025 Entersoft Academy. All rights reserved.
+    </footer>
+
+    <script>
+        function onTurnstileSuccess(token) {
+            document.getElementById('turnstile-form').submit();
+        }
+    </script>
+</body>
+</html>
