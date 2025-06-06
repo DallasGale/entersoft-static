@@ -289,10 +289,10 @@ p {
   background: none;
   position: absolute;
   width: 100%;
-  top: 1em;
+  top: 0;
   z-index: 99;
-  padding: 0;
-  height: 80px;
+  padding: 0 !important;
+  height: 117px;
   background-size: 200% auto;
   z-index: 200;
   left: 0;
