@@ -83,6 +83,9 @@ p {
     display: none;
   }
 }
+.sidebar-profile {
+  margin-top: 3em;
+}
 
 .sidebar .logo > a {
   height: var(--logo-size);
@@ -474,4 +477,8 @@ form {
 
 a {
   color: var(--link-color);
+}
+
+.my_courses_wrapper .btn.theme_btn.small {
+  margin-bottom: 1em;
 }
