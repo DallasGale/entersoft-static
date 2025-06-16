@@ -482,3 +482,13 @@ a {
 .my_courses_wrapper .btn.theme_btn.small {
   margin-bottom: 1em;
 }
+
+.position-relative,
+.course__details_head {
+  background-color: transparent !important;
+}
+
+.course__details_head .title,
+.course__details_head .location .text-black {
+  color: var(--acs-text-color) !important;
+}
