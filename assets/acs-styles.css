@@ -18,7 +18,7 @@
 body.acs-body {
   background-color: var(--acs-navy);
   color: var(--acs-text-color);
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main.acs-main {
@@ -173,4 +173,8 @@ main.acs-main {
     height: 107px;
     width: 107px;
   }
+}
+
+.acs-main-content {
+  min-height: 100vh;
 }
